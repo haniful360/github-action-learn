@@ -1,0 +1,12 @@
+name: First workflow
+on: [push]
+
+jobs:
+  first-workflow:
+    runs-on: windows-latest
+
+    steps: 
+      -name: First step
+      run: |
+        echo "This is the first step: Hello World"
+        echo "This is the first workflow: Hello Again"
